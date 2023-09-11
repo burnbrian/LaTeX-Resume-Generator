@@ -1,0 +1,77 @@
+\documentclass{resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+\name{Your Name}
+\contact{\href{tel:+82-10-1XXX-1000}{+82-10-1XXX-1000}}
+\contact{\href{mailto:anon@example.com}{anon@example.com}}
+\contact{\href{https://github.com/YourGithubId}{github.com/YourGithubId}}
+\contact{\href{https://linkedin.com/in/YourLinkedinId}{linkedin.com/in/YourLinkedinId}}
+
+\begin{document}
+\makeheader
+
+\begin{ResumeSection}{skills}
+    \newcommand{\skill}[2]{\textbf{#1} - #2}
+    \begin{ResumeSubsection}{org=Engineering}
+        \begin{itemize}
+            \item \skill{Enterprise Web Application Development}{python, nodejs, java spring}
+            \item \skill{Data Engineering}{SQL, BI, Data ETL}
+            \item \skill{Web Client Development}{javascript, react.js, HTML, CSS}
+            \item \skill{Infrasructure}{Container based environments, Cloud service providers including AWS and GCP}
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org=General}
+        \begin{itemize}
+            \item \skill{Language Skills}{Korean as mother tongue, fluent English and Japanese, entry-level Chinese}
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{experience}
+    \begin{ResumeSubsection}{org=Brandazine,location={Seoul, Korea},position={Product Lead},duration=2020.07-2021.09}
+        \begin{itemize}
+            \item \lipsum[1][1-3]
+            \item \lipsum[2][1-2]
+            \item \lipsum[3][1-3]
+            \item \lipsum[4][1]
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={Samsung Electronics C-LAB},location={Seoul, Korea},position={Winter Internship},duration={2019.12-2020.02}}
+        \begin{itemize}
+            \item \lipsum[5][1-3]
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org=kakaopay,location={Sung-nam, Korea},position={Internship},duration={2019.03-2019.08}}
+        \begin{itemize}
+            \item \lipsum[6][1-3]
+            \item \lipsum[7][1-3]
+        \end{itemize}
+    \end{ResumeSubsection}
+
+    \begin{ResumeSubsection}{org={ROK Cyber Command},position={Military Service as SW engineer},duration={2017.05-2019.02}}
+        \begin{itemize}
+            \item \lipsum[8][1-3]
+            \item \lipsum[9][1-3]
+        \end{itemize}
+
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{education}
+    \begin{ResumeSubsection}{org={Seoul National University},position={Bachelor of Electric and Computer Engineering},duration={2014.03-2021.02}}
+        \begin{itemize}
+            \item Minored in Industrial Design
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{projects}
+    \begin{itemize}
+        \item Developed Face recognition model on "Introduction to Deep learning" lecture \hfill\em{Autumn, 2019}
+    \end{itemize}
+\end{ResumeSection}
+
+\end{document}
