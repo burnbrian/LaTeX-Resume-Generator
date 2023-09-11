@@ -1,5 +1,7 @@
 # automaticResumeGenerator
 
+[![latex2pdf](https://github.com/burnbrian/automaticResumeGenerator/actions/workflows/latex2pdf.yml/badge.svg)](https://github.com/burnbrian/automaticResumeGenerator/actions/workflows/latex2pdf.yml)
+
 You're a busy important person. Very important, very busy. No time for Docker files or build scripts. GitHub actions to the rescue. Use this repository to quickly generate a PDF resume using your LaTex template of choice.
 
 ## Instructions
