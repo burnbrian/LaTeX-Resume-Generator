@@ -22,4 +22,4 @@ jobs:
         with: 
           commit-message: "PDF Resume Generated on ${{ steps.date.outputs.date }}"
           branch: pdf
-          title: "[CI] LaTex to PDF Action GitHub action"
+          title: "[CI] LaTex to PDF GitHub action"
