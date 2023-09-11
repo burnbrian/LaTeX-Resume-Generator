@@ -1,0 +1,25 @@
+name: "latex2pdf"
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - resume.tex
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: sudo apt install texlive-base texlive-latex-extra git
+      - name: Generate PDF from LaTex file
+        run: pdflatex resume.tex -o resume.pdf
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v5
+        with: 
+          commit-message: "PDF Resume Generated on ${{ steps.date.outputs.date }}"
+          branch: pdf
+          title: "[CI] LaTex to PDF Action GitHub action"
