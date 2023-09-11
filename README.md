@@ -11,3 +11,7 @@ You're a busy important person. Very important, very busy. No time for Docker fi
 5. Replace the `.tex` file in your repository with the `.tex` file of your choice
 
 Whenever you make changes to the `.tex` file in your new repository it will trigger a GitHub action to output a PDF version of your resume. Once the build is complete click "Pull Requests (top menu)" -> click an open pull request titled "[CI] LaTex to PDF Action GitHub action" -> then click "Merge pull request". You should now see your PDF resume in your repository.
+
+## Screenshot
+
+![Screenshot of LaTeX to PDF resume](resume-screenshot.png?raw=true "LaTex to PDF Resume Screenshot")
