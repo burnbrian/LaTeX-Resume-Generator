@@ -1,4 +1,4 @@
-# automaticResumeGenerator
+# LaTeX Resume Generator with GitHub Actions
 
 [![latex2pdf](https://github.com/burnbrian/automaticResumeGenerator/actions/workflows/latex2pdf.yml/badge.svg)](https://github.com/burnbrian/automaticResumeGenerator/actions/workflows/latex2pdf.yml)
 
